@@ -1,6 +1,7 @@
 import { Hero } from '../components/Hero'
 import { Card } from '../components/Card'
 import { Gallery } from '../components/Gallery'
+import { Contact } from '../components/Contact'
 import { vehiculos } from '../data/vehiculos'
 import { imagenesGaleria } from '../data/galeria'
 
@@ -44,6 +45,8 @@ export const Home = () => {
       </section>
 
       <Gallery titulo="Nuestra Galería" imagenes={imagenesGaleria} />
+
+      <Contact />
     </>
   )
 }

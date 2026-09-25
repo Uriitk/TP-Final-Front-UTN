@@ -1,0 +1,116 @@
+/* ==========================================================
+ CONTACTO
+========================================================== */
+
+.contact {
+  padding: 90px 0;
+  background: var(--color-background);
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+}
+
+.contact-text {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.contact form {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.contact input,
+.contact textarea,
+.contact select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: var(--font-text);
+}
+
+.contact input:focus,
+.contact textarea:focus,
+.contact select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(217, 4, 41, .15);
+}
+
+.contact textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact fieldset {
+  padding: 20px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.contact legend {
+  padding: 0 10px;
+  font-weight: 600;
+}
+
+.contact fieldset label {
+  display: block;
+  margin: 12px 0;
+}
+
+.contact fieldset input[type="radio"] {
+  width: auto;
+  margin-right: 8px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.form-mensaje {
+  margin-top: 25px;
+  text-align: center;
+  font-weight: 600;
+  color: #15803d;
+}
+
+/* ==========================================================
+ RESPONSIVE
+========================================================== */
+
+@media (max-width: 768px) {
+  .contact form {
+    padding: 25px;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+  }
+
+  .form-buttons .btn {
+    width: 100%;
+  }
+}
