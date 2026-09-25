@@ -18,7 +18,7 @@ export const Contact = () => {
   const [enviado, setEnviado] = useState(false)
 
   const handleSubmit = (e) => {
-    // evita que el navegador recargue la pagina al enviar
+    // Evita que el navegador recargue la pagina al enviar
     e.preventDefault()
     console.log('Formulario enviado:', valores)
     setEnviado(true)
