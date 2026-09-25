@@ -1,14 +1,14 @@
 import '../styles/Footer.css'
 
-// Redes sociales: "icono" es la clase de FontAwesome de cada red
+/* Redes sociales para el footer */
 const redes = [
   { nombre: 'Instagram', url: 'https://instagram.com', icono: 'fa-instagram' },
   { nombre: 'Facebook', url: 'https://facebook.com', icono: 'fa-facebook' },
   { nombre: 'WhatsApp', url: 'https://whatsapp.com', icono: 'fa-whatsapp' },
 ]
 
-// Pie de página con datos de la concesionaria, redes y copyright
 export const Footer = () => {
+  /* Asi el año del copyright se actualiza solo */
   const anioActual = new Date().getFullYear()
 
   return (

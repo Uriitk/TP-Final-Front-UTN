@@ -1,15 +1,23 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './styles/App.css'
-import { Navbar } from './components/Navbar'
-import { Footer } from './components/Footer'
+import { Layout } from './components/Layout'
+import { Home } from './pages/Home'
+import { Vehiculos } from './pages/Vehiculos'
+import { Galeria } from './pages/Galeria'
+import { Contacto } from './pages/Contacto'
 
 export const App = () => {
   return (
-    <>
-      <Navbar />
-      <main>
-        <h1>DC RACING</h1>
-      </main>
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        {/* Todas las paginas van adentro del Layout */}
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="vehiculos" element={<Vehiculos />} />
+          <Route path="galeria" element={<Galeria />} />
+          <Route path="contacto" element={<Contacto />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }

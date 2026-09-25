@@ -1,6 +1,7 @@
 import '../styles/Navbar.css'
+import { Link, NavLink } from 'react-router-dom'
 
-// Links del menú de navegación: agregar una sección nueva es sumar un objeto acá
+/* Secciones del menú */
 const links = [
   { nombre: 'Inicio', url: '/' },
   { nombre: 'Vehículos', url: '/vehiculos' },
@@ -8,20 +9,20 @@ const links = [
   { nombre: 'Contacto', url: '/contacto' },
 ]
 
-// Barra de navegación fija en la parte superior de todas las páginas
 export const Navbar = () => {
   return (
     <header>
       <nav className="navbar">
-        <a href="/" className="logo">
+        <Link to="/" className="logo">
           <i className="fa-solid fa-car-side"></i>
           DC Racing
-        </a>
+        </Link>
 
+        {/* NavLink para que marque en rojo la página en la que se encuentra el usuario */}
         <ul className="nav-links">
           {links.map((link) => (
             <li key={link.url}>
-              <a href={link.url}>{link.nombre}</a>
+              <NavLink to={link.url}>{link.nombre}</NavLink>
             </li>
           ))}
         </ul>
