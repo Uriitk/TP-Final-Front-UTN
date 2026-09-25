@@ -1,12 +1,9 @@
-import './App.css'
+import './styles/App.css'
 
-function App() {
-
-  return (
+export const App = () => {
+  return(
     <>
-      
+      <h1>DC RACING</h1>
     </>
   )
 }
-
-export default App
