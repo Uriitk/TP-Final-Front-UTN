@@ -52,61 +52,6 @@ ul {
 }
 
 /* ==========================================================
- HEADER
-========================================================== */
-
-header {
-  background: var(--color-secondary);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-
-}
-
-.navbar {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 0;
-
-}
-
-.logo {
-  color: white;
-  font-size: 1.7rem;
-  font-weight: 700;
-  font-family: var(--font-title);
-
-}
-
-.logo i {
-  color: var(--color-primary);
-  margin-right: 8px;
-}
-
-.nav-links {
-  display: flex;
-  gap: 35px;
-}
-
-.nav-links a {
-  color: white;
-  font-weight: 500;
-  padding-bottom: 5px;
-  border-bottom: 2px solid transparent;
-  transition: color 0.3s, border-color 0.3s;
-}
-
-.nav-links a:hover,
-.nav-links .active {
-  color: var(--color-primary);
-  border-bottom-color: var(--color-primary);
-}
-
-/* ==========================================================
  HERO
 ========================================================== */
 
@@ -435,112 +380,10 @@ fieldset input[type="radio"] {
 }
 
 /* ==========================================================
-   FOOTER
-========================================================== */
-
-footer {
-  background: var(--color-secondary);
-  color: white;
-  padding: 3rem 0 1.5rem;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 40px;
-  margin-bottom: 2rem;
-}
-
-.footer-brand {
-  flex: 1;
-  text-align: left;
-}
-
-.footer-brand h3 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  font-family: var(--font-title);
-}
-
-.footer-brand p {
-  color: #d1d5db;
-  line-height: 1.8;
-}
-
-.footer-contact {
-  flex: 1;
-  text-align: right;
-}
-
-.footer-contact h4 {
-  font-family: var(--font-title);
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
-}
-
-.footer-location {
-  margin-top: 1rem;
-  font-weight: 600;
-}
-
-.footer-location i {
-  color: var(--color-primary);
-  margin-right: 8px;
-}
-
-.footer-email {
-  margin-top: 1rem;
-  color: #d1d5db;
-  font-weight: 500;
-}
-
-.footer-email i {
-  color: var(--color-primary);
-  margin-right: 8px;
-}
-
-.footer-social {
-  display: flex;
-  justify-content: flex-end;
-  gap: 20px;
-}
-
-.footer-social a {
-  color: white;
-  font-size: 1.5rem;
-  transition: .3s;
-}
-
-.footer-social a:hover {
-  color: var(--color-primary);
-  transform: translateY(-4px);
-}
-
-.copyright {
-  color: #9ca3af;
-  font-size: .95rem;
-  text-align: center;
-  border-top: 1px solid #374151;
-  padding-top: 1.5rem;
-}
-
-/* ==========================================================
    RESPONSIVE
 ========================================================== */
 
 @media (max-width: 768px) {
-
-  .navbar {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
-  }
 
   .hero h1 {
     font-size: 2.8rem;
@@ -574,20 +417,6 @@ footer {
   .gallery-item {
     width: calc(50% - 10px);
     height: 160px;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-brand,
-  .footer-contact {
-    text-align: center;
-  }
-
-  .footer-social {
-    justify-content: center;
   }
 
   form {
