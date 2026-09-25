@@ -52,51 +52,6 @@ ul {
 }
 
 /* ==========================================================
- HERO
-========================================================== */
-
-.hero {
-  min-height: 90vh;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)),
-    url("../assets/img/hero.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  padding: 20px;
-}
-
-.hero-content {
-  max-width: 700px;
-}
-
-.hero h1 {
-  font-family: var(--font-title);
-  font-size: 5rem;
-  margin-bottom: 10px;
-  line-height: 1.1;
-  letter-spacing: 2px;
-}
-
-.hero-subtitle {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--color-primary);
-  margin-bottom: 15px;
-}
-
-.hero-description {
-  font-size: 1.1rem;
-  margin-bottom: 40px;
-  opacity: 0.9;
-}
-
-/* ==========================================================
  BOTONES
 ========================================================== */
 
@@ -190,67 +145,6 @@ ul {
   justify-content: center;
   flex-wrap: wrap;
   gap: 35px;
-}
-
-.card {
-  width: 340px;
-  background: white;
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
-  transition: .35s;
-  display: flex;
-  flex-direction: column;
-}
-
-.card:hover {
-  transform: translateY(-12px);
-  box-shadow: 0 25px 45px rgba(0, 0, 0, .18);
-}
-
-.card-image {
-  position: relative;
-}
-
-.card-badge {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  background: var(--color-primary);
-  color: white;
-  padding: 6px 14px;
-  border-radius: 8px;
-  font-size: 0.85rem;
-  font-weight: 600;
-}
-
-.card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-}
-
-.card-content {
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
-.card-content h3 {
-  font-family: var(--font-title);
-  font-size: 1.5rem;
-  margin-bottom: 12px;
-}
-
-.card-content p {
-  color: #6b7280;
-  margin-bottom: 25px;
-  flex-grow: 1;
-}
-
-.card-content .btn {
-  align-self: center;
 }
 
 /* ==========================================================
@@ -385,18 +279,6 @@ fieldset input[type="radio"] {
 
 @media (max-width: 768px) {
 
-  .hero h1 {
-    font-size: 2.8rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1.2rem;
-  }
-
-  .hero-description {
-    font-size: 1rem;
-  }
-
   .about h2,
   .services h2,
   .gallery h2,
@@ -407,11 +289,6 @@ fieldset input[type="radio"] {
   .cards {
     flex-direction: column;
     align-items: center;
-  }
-
-  .card {
-    width: 100%;
-    max-width: 360px;
   }
 
   .gallery-item {

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Hero } from '../components/Hero'
 import { Card } from '../components/Card'
 import { vehiculos } from '../data/vehiculos'
 
@@ -8,20 +8,7 @@ const destacados = vehiculos.slice(0, 3)
 export const Home = () => {
   return (
     <>
-      {/* Hero */}
-      <section className="hero" id="inicio">
-        <div className="hero-content">
-          <h1>DC Racing</h1>
-          <p className="hero-subtitle">Encontrá el vehículo de tus sueños</p>
-          <p className="hero-description">
-            Concesionaria especializada en vehículos nuevos y usados,
-            con financiación, garantía y atención personalizada.
-          </p>
-          <Link to="/vehiculos" className="btn">
-            Ver vehículos <i className="fa-solid fa-arrow-right"></i>
-          </Link>
-        </div>
-      </section>
+      <Hero />
 
       {/* Sobre Nosotros */}
       <section className="about">

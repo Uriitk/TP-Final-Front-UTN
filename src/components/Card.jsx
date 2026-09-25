@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import '../styles/Card.css'
 
 export const Card = ({ badge, imagen, titulo, descripcion, textoBoton, link }) => {
   return (
