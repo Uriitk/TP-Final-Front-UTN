@@ -89,4 +89,4 @@ No se conecta con ningún servidor, los datos solo se ven en la consola del nave
 
 ## Autor
 
-Uriel Tkaczuk
+Uriel Tkaczuk - UriCodex®
