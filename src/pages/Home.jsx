@@ -1,6 +1,8 @@
 import { Hero } from '../components/Hero'
 import { Card } from '../components/Card'
+import { Gallery } from '../components/Gallery'
 import { vehiculos } from '../data/vehiculos'
+import { imagenesGaleria } from '../data/galeria'
 
 /* En el inicio solo se muestran los primeros 3 autos */
 const destacados = vehiculos.slice(0, 3)
@@ -40,6 +42,8 @@ export const Home = () => {
           </div>
         </div>
       </section>
+
+      <Gallery titulo="Nuestra Galería" imagenes={imagenesGaleria} />
     </>
   )
 }

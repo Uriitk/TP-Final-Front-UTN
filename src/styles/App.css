@@ -148,40 +148,6 @@ ul {
 }
 
 /* ==========================================================
-   GALERÍA
-========================================================== */
-
-.gallery {
-  padding: 90px 0;
-  background: white;
-}
-
-.gallery h2 {
-  margin-bottom: 60px;
-}
-
-.gallery-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.gallery-item {
-  width: 270px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, .10);
-  transition: .35s;
-}
-
-.gallery-item:hover {
-  transform: scale(1.03);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, .18);
-}
-
-/* ==========================================================
    CONTACTO
 ========================================================== */
 
@@ -289,11 +255,6 @@ fieldset input[type="radio"] {
   .cards {
     flex-direction: column;
     align-items: center;
-  }
-
-  .gallery-item {
-    width: calc(50% - 10px);
-    height: 160px;
   }
 
   form {

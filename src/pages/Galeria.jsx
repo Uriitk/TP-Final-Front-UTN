@@ -1,5 +1,8 @@
+import { Gallery } from '../components/Gallery'
+import { imagenesGaleria } from '../data/galeria'
+
 export const Galeria = () => {
   return (
-    <h1>Galería</h1>
+    <Gallery titulo="Nuestra Galería" imagenes={imagenesGaleria} />
   )
 }
