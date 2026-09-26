@@ -10,7 +10,6 @@ export const useForm = (valoresIniciales) => {
     const { name, value } = e.target
     console.log(`Campo "${name}" cambió a:`, value)
 
-    // copio lo que ya estaba y piso solo el campo que cambió
     setValores((anteriores) => ({ ...anteriores, [name]: value }))
   }
 
